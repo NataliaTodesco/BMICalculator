@@ -1,0 +1,65 @@
+<div class="container text-center mt-4 p-4">
+    <div class="row d-flex justify-content-center">
+        <h2>BMI CALCULATOR</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="fondo-item s" (click)="selecSexo('M')" [ngClass]="{'seleccionado': sexo === 'M'}">
+                <div class="contenedor">
+                    <i class="bi bi-gender-male sexo"></i>
+                    Masculino
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="fondo-item s" (click)="selecSexo('F')" [ngClass]="{'seleccionado': sexo === 'F'}">
+                <div class="contenedor">
+                    <i class="bi bi-gender-female sexo"></i>
+                    Femenino
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="fondo-item">
+                <div class="contenedor">
+                    <p>Altura</p>
+                    <div class="estiloNumero">{{altura}}
+                        <span class="cm">cm</span>
+                    </div>
+                    <input type="range" class="custom-range" min="120" max="220" [(ngModel)]="altura">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="fondo-item">
+                <div class="contenedor">
+                    <p>Peso</p>
+                    <div class="estiloNumero">{{peso}}</div>
+                    <div>
+                        <i class="bi bi-plus-lg sumaresta" (click)="peso = peso+1"></i>
+                        <i class="bi bi-dash-lg sumaresta" (click)="peso = peso-1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="fondo-item">
+                <div class="contenedor">
+                    <p>Edad</p>
+                    <div class="estiloNumero">{{edad}}</div>
+                    <div>
+                        <i class="bi bi-plus-lg sumaresta" (click)="edad= edad+1"></i>
+                        <i class="bi bi-dash-lg sumaresta" (click)="edad= edad-1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <button class="btn btn-block btn-lg" (click)="calcular()">Calcular</button>
+    </div>
+</div>

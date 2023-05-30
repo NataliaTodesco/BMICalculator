@@ -1,0 +1,16 @@
+label{
+    font-weight: 800;
+    color: green;
+    margin-top: 60px;
+    font-size: larger;
+    text-transform: uppercase;
+}
+button{
+    background-color: #e63946; 
+    border-radius: 30px;
+    color: #fff;
+}
+.numero{
+    font-weight: 700;
+    font-size: 70px;
+}

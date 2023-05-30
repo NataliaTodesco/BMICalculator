@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #1d3557;
+}
+.contenedor{
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+    flex-direction:column;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 35%;
+    color: #fff;
+    height: 100vh;
+}
+.fondo-item{
+    margin-top: 20px;
+    background-color: #457b9d;
+    border-radius: 10px;
+}
